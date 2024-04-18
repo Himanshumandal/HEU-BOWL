@@ -1,0 +1,419 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #e53937;
+    border-radius: 10px;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+/* Navbar Start */
+
+.header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 2rem 9%;
+    background:lightblue;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+    transition: .3s;
+   
+}
+.header img{
+    height: 70px;
+}
+.header.sticky{
+    background:var(--bg-color);
+}
+.logo{
+    position: relative;
+    font-size: 2.5rem;
+    color:var(--text-color);
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 1rem;
+    color:black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+} 
+.navbar a:hover, .navbar a.active{
+    color: var(--main-color);
+}
+/* Navbar End */
+
+
+
+
+/* Home Section Start */
+.home{
+    width: 100%;
+    height: 100vh;
+    padding: 5px 11% 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    background-color: lightblue;
+    margin-top: 80px;
+}
+.home .img{
+    flex: 1 1 300px;
+}
+.home .img img{
+    width: 100%;
+    margin-left: 60px;
+}
+.home-content{
+    flex: 1 1 400px;
+    margin-top: 30px;
+}
+.home-content span{
+    font-family:  Stylish ;
+    font-size: 240px;
+    font-weight: 800;
+    color: rgb(49, 49, 238);
+}
+.home-content h3{
+    font-size: 50px;
+    font-weight: 700;
+}
+#home-btn{
+    padding: 10px;
+    text-decoration: none;
+    background: #e53937;
+    color: white;
+    border-radius: 5px;
+}
+/* Home Section End */
+
+/* select bar */
+.category .i-eat
+{
+    text-align: center;
+    background-color: lightblue;
+   
+}
+.category .i-eat h3
+{
+    font-size: 40px;
+    font-family: cursive;
+   
+}
+.selection
+{
+    text-align: center;
+    font-size: 25px;
+    
+}
+.selection .select-bar
+{
+    border-radius: 20px;
+    padding: 26px;
+    background-color: rgb(49, 49, 238);
+    color: white;
+    
+}
+.selection .select-bar option
+{
+  font-size: 20px;
+}
+
+
+
+/* Top Section Start */
+.top-section{
+    padding: 10px 11% 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.top-section .content{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.top-section h5{
+    color: #e53937;
+    text-align: center;
+}
+.top-section h3{
+    color: rgb(49, 49, 238);
+    font-size: 70px;
+    text-align: center;
+    font-weight: 600;
+    font-family: Cedarville Cursive;
+    font-style: italic;
+}
+.top-section .about-btn button
+{
+    margin-top: 20px;
+   background-color: rgb(226, 64, 64);
+   color: white;
+   height: 40px;
+   width: 110px;
+   border-radius: 20px;
+
+}
+
+.top-section  .card{
+    border: none;
+}
+.top-section .row .card img{
+    width: 200px;
+    margin: auto;
+}
+/* Top Section End */
+
+
+
+
+/* Our Menu Strat */
+.menu{
+    padding: 100px 11% 100px;
+    background-color: rgb(84, 84, 239);
+   
+}
+.menu .menu-info .menu-des
+{
+    width:100%;
+   
+    text-align: center;
+    margin-bottom: 40px;
+    color:white;
+}
+.menu .item-menu 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu .menu-heading{
+  
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.menu .row .item-menu .card{
+   background-color:  rgb(84, 84, 239);
+   border: none;
+}
+
+.menu .row .item-menu .card-body
+{
+  
+    text-align: center;
+    color: white;
+}
+.menu .row .item-menu .card-body h3{
+    font-size: 15px;
+    color: white;
+    
+}
+.menu .row .item-menu .card-body span
+{
+    font-family: Cedarville Cursive;
+    margin-right: 12px;
+}
+.menu .row .item-menu .card-body p
+{
+    font-size: 30px;
+}
+
+
+
+/* Our Menu End */
+
+
+
+/* Review Section Start */
+.review {
+    display: flex;
+    margin-top: 90px;
+    width: 100%;
+    height: 300px;
+}
+.review .review-des
+{
+    margin-left:200px ;
+  
+    width: 35%;
+}
+.review .review-info
+{
+    margin-left:200px ;
+    width: 35%;
+}
+.review .review-info .review-img{
+    margin-top: 30px;
+    text-align: end;
+}
+
+.review .review-info .review-img span
+{
+    margin-left: 15px;
+    text-align:end;
+}
+.review .review-info .review-img img
+{
+
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.review .review-des h3{
+    font-size: 70px;
+    color:black;
+}
+.review .review-des p{
+    color:black;
+}
+
+.review .review-des .arrow{
+    font-size: 50px;
+    text-align: end;
+    color: rgb(136, 214, 18);
+}
+
+@media screen and(max-width: 636px){
+    .review .review-des h3{
+        margin-top: 10px;
+    }
+}
+/* Review Section End */
+
+
+
+
+/* Contact Section Start */
+.contact{
+    padding: 100px 11% 100px;
+    display: flex;
+    margin-top: 250px;
+    background-color: rgb(84, 84, 239);
+    width: 100%;
+  
+}
+.contact .contact-info
+{
+    margin-right: 250px;
+}
+.contact .contact-big
+{
+    font-size: 45px;
+    color: white;
+   
+}
+.contact .contact-small
+{
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    
+}
+
+.contact .email
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30;
+  
+}
+.contact input
+{
+    height: 60px;
+    width: 500px;
+   border-top-left-radius:10px ;
+   border-bottom-left-radius:10px ;
+   font-size: 25px;
+   padding-left: 30px;
+ 
+}
+.contact button
+{
+    font-size: 20px;
+    height: 60px;
+    width: 150px;
+    border: none;
+    background-color: white;
+    border-top-left-radius:5px ;
+   border-bottom-left-radius:5px ;
+}
+.contact .col-md-5{
+    background: #e53937;
+    border-radius: 10px;
+    color: white;
+}
+.contact h3{
+    margin-top: 30px;
+}
+.contact i span{
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* Contact Section End */
+
+
+
+
+
+/* Footer Start */
+#footer{
+    padding: 15px 11% 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 300px;
+}
+#footer .footer-info .footer-ans
+{
+    margin-top:30px;
+}
+
+.end{
+    display: flex;
+    justify-content:space-around;
+    height: 50px;
+    background-color: rgb(242, 240, 236);
+}
+.end span
+{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.end p
+{
+    font-size: 20px;
+}
+/* Footer End */
